@@ -6,6 +6,7 @@ import XRControls from './XRControls.jsx'
 
 export default function XRCanvas({
   store,
+  modelUrl,
   activeAnimation,
   setActiveAnimation,
   animationNames,
@@ -31,6 +32,7 @@ export default function XRCanvas({
 
         <Suspense fallback={null}>
           <Model
+            modelUrl={modelUrl}
             activeAnimation={activeAnimation}
             onAnimationNames={setAnimationNames}
           />

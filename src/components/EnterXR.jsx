@@ -10,7 +10,7 @@ export default function EnterXR({ store }) {
       */}
       <VRButton
         store={store}
-        className="rounded bg-white/10 px-3 py-2 text-sm text-white hover:bg-white/15"
+        className="rounded bg-popover px-3 py-2 text-sm text-foreground hover:brightness-95"
         onError={(e) => console.error(e)}
       >
         {(status) =>
